@@ -1857,3 +1857,112 @@
 font-size: small;
 
 }
+
+/* Form */
+
+	form label {
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #888;
+		display: block;
+		margin: 0 0 1em 0;
+	}
+
+	form input[type="text"],
+	form input[type="email"]
+	input[type="password"],
+	form select,
+	form textarea {
+		-moz-transition: background-color 0.25s ease-in-out;
+		-webkit-transition: background-color 0.25s ease-in-out;
+		-ms-transition: background-color 0.25s ease-in-out;
+		transition: background-color 0.25s ease-in-out;
+		-webkit-appearance: none;
+		display: block;
+		border: 0;
+		background: #e8e8e8;
+		width: 100%;
+		box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
+		border-radius: 4px;
+		line-height: 1.25em;
+		padding: 0.75em 1em 0.75em 1em;
+	}
+
+		form input[type="text"]:focus,
+		form input[type="email"]
+		input[type="password"]:focus,
+		form select:focus,
+		form textarea:focus {
+			background: #f0f0f0;
+		}
+
+	form textarea {
+		min-height: 11em;
+	}
+
+	form .formerize-placeholder {
+		color: #555 !important;
+	}
+
+	form ::-webkit-input-placeholder {
+		color: #555 !important;
+		line-height: 1.35em;
+	}
+
+	form :-moz-placeholder {
+		color: #555 !important;
+	}
+
+	form ::-moz-placeholder {
+		color: #555 !important;
+	}
+
+	form :-ms-input-placeholder {
+		color: #555 !important;
+	}
+
+	form ::-moz-focus-inner {
+		border: 0;
+	}
+
+/* Table */
+
+	table {
+		width: 100%;
+	}
+
+		table.default {
+			width: 100%;
+		}
+
+			table.default tbody tr {
+				border-top: solid 1px #E5E5E5;
+			}
+
+				table.default tbody tr:first-child {
+					border-top: 0;
+				}
+
+			table.default td {
+				padding: 0.75em 1em 0.75em 1em;
+			}
+
+			table.default th {
+				text-align: left;
+				font-weight: bold;
+				padding: 0.75em 1em 0.75em 1em;
+			}
+
+			table.default thead {
+				background: #878787;
+				color: #fff;
+				font-weight: 400;
+				text-transform: uppercase;
+				border: 0;
+				box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+			}
+
+			table.default tfoot {
+				background: #F0F0F0;
+				border-top: solid 2px #E5E5E5;
+			}
